@@ -62,7 +62,6 @@ a:hover {
     color: #585555;
 }
 
-/* MEDIA QUERY FOR SMALL SCREENS (PHONES) */
 @media (max-width: 768px) {
     .hello {
         font-size: 24px;
