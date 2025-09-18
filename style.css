@@ -1,88 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #706a6a;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.hello {
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 30px;
+.title {
+  margin-top: 20px;
+  font-size: 36px;
 }
 
-#cou {
-    background-color: #2e2e2e;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    padding: 60px;
-    font-size: 30px;
-    position: relative;
-    display: block;
-    margin: 30px auto 10px auto;
+.stats {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
 }
 
+.stat-box {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.stat-box p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.game-area {
+  margin: 20px auto;
+  width: 500px;
+  height: 300px;
+  background: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+.game-area:active {
+  background: #3a3a3a;
+}
+
+#startText {
+  font-size: 24px;
+  color: white;
+  user-select: none;   
+  pointer-events: none; 
+}
+
+.time-select {
+  margin: 20px 0;
+}
+
+.time-select button,
 #reset {
-    color: white;
-    background-color: #2e2e2e;
-    border: none;
-    border-radius: 20px;
-    display: block;
-    margin: 20px auto;
-    padding: 20px 60px;
+  background: #3a3a3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
+.time-select button:hover,
 #reset:hover {
-    background-color: rgb(167, 166, 166);
+  background: #5a5a5a;
+}
+
+footer {
+  margin-top: 40px;
+  color: rgba(200, 200, 200, 0.7);
+}
+
+footer h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+footer a {
+  color: rgba(201, 199, 199, 0.8);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #888;
 }
 
 .version {
-    opacity: 0.5;
-    color: rgba(201, 199, 199, 0.774);
-    text-align: center;
-    margin-top: 40px;
-}
-
-.footer {
-    text-align: center;
-    color: rgba(201, 199, 199, 0.774);
-    margin-top: 100px;
-}
-
-a {
-    color: rgba(201, 199, 199, 0.774);
-    text-decoration: none;
-    margin: 0 10px;
-    display: inline-block;
-}
-
-a:hover {
-    color: #585555;
-}
-
-@media (max-width: 768px) {
-    .hello {
-        font-size: 24px;
-        margin: 20px 0;
-    }
-
-    #cou {
-        padding: 40px;
-        font-size: 24px;
-    }
-
-    #reset {
-        padding: 15px 40px;
-        font-size: 16px;
-    }
-
-    .footer {
-        margin-top: 60px;
-    }
-
-    .version {
-        font-size: 12px;
-    }
+  font-size: 14px;
+  opacity: 0.7;
 }
